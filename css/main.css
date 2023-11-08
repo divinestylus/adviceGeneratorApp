@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap');
+
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
+:root {
+    --color-primary-green: hsl(150, 100%, 66%);
+    --color-primary-cyan: hsl(193, 38%, 86%);
+    --color-neutral-grayish-blue:  hsl(217, 19%, 38%);
+    --color-neutral-dark-grayish-blue: hsl(217, 19%, 24%);
+    --color-neutral-dark-blue: hsl(218, 23%, 16%);
+    --font-quote-size: 18px;
+    --font-family: 'Manrope', sans-serif;
+}
+
+html {
+    box-sizing: inherit;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: var(--color-neutral-dark-blue);
+    font-family: var(--font-family);
+}
+
+p {
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+.main-container {
+    padding: 13rem 1rem;
+}
+
+.card {
+    background-color: var(--color-neutral-dark-grayish-blue);
+    text-align: center;
+    padding: 1.5rem 0.5rem;
+    position: relative;
+    border-radius: 10px;
+    max-width: 450px;
+    margin: 0 auto;
+}
+
+.card-heading {
+    color: var(--color-primary-green);
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-size: 0.6rem;
+}
+
+.card-text {
+    color: var(--color-primary-cyan);
+    font-size: var(--font-quote-size);
+    padding-block-start: 1rem;
+}
+
+.card-divider-mobile {
+    width: 100%;
+    padding-block: 1.5rem;
+}
+
+.card-divider-desktop {
+    display: none;
+}
+
+.card-button {
+    position: absolute;
+    inset: 0;
+    height: fit-content;
+    margin: auto auto -25px auto;
+    border: 0;
+    background-color: var(--color-primary-green);
+    padding: 1rem;
+    transition: all 0.3s ease-in;
+    border-radius: 100px;
+}
+
+.card-button:hover {
+    cursor: pointer;
+    box-shadow: rgba(82, 255, 168, 0.5)  0px 0px 30px, rgba(82, 255, 168, 0.5) 0px 0px 30px;
+}
+
+.card-button-disabled:hover {
+    cursor: not-allowed;
+    box-shadow: none;
+}
+
+.card-button img {
+    vertical-align: middle;
+}
+
+.attribution {
+    text-align: center;
+    color: var(--color-neutral-grayish-blue);
+    font-size: 0.6rem;
+    padding-inline: 1rem;
+}
+
+.attribution a {
+    color: var(--color-primary-cyan);
+    transition: color 0.3s ease-in;
+}
+
+.attribution a:hover {
+    color: var(--color-primary-green);
+}
+
+/* Responsiveness section */
+@media(min-width: 330px) {
+    .card {
+        padding: 2.5rem 1.5rem 2rem 1.5rem;
+    }
+
+    .card-heading {
+        font-size: 0.8rem;
+    }
+
+    .card-text {
+        font-size: 1.5rem;
+    }
+
+    .attribution {
+        font-size: 0.7rem;
+    }
+}
+
+@media(min-width: 800px) {
+    .main-container {
+        padding-block: 18rem;
+    }
+}
