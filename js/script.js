@@ -7,11 +7,6 @@ API_URL = "https://api.adviceslip.com/advice";
 
 /** Functions section */
 
-/** Only call get the data when the page has loaded */
-document.addEventListener('load', ()=>{
-    getData(`${API_URL}/${generateRandomNumber()}`);
-})
-
 /**
  * This function generates a random number between 1 -200
  */
@@ -40,6 +35,8 @@ async function getData(API_URL){
         enableButton();
     }
 }
+
+getData(`${API_URL}/${generateRandomNumber()}`);
 
 /**
  * Function to get ID
