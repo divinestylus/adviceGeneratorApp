@@ -5,7 +5,7 @@
 
 ## Welcome! 👋
 
-This is a solution to the [Frontend Mentor](https://www.frontendmentor.io) This is my 2<sup>nd</sup>  User Interface (UI) component challenge.
+This is a solution to the [Frontend Mentor](https://www.frontendmentor.io) This is my 6<sup>th</sup>  User Interface (UI) component challenge.
 
 ## Table of contents
 
